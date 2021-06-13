@@ -1,0 +1,745 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>쿠캣마켓</title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+	
+
+</head>
+<style>
+	
+  *{
+  	font-family: 'Nanum Gothic', sans-serif;
+  	margin: 0;
+  }
+	body{
+		margin:0;
+		
+		box-sizing: border-box;
+	}
+
+	.logo{
+		
+		
+		margin-left: 650px;
+		
+	}
+	.header{
+
+		margin-right: auto;
+		margin-left: auto;
+	}
+	.header .category{
+		float: left;
+		
+	}
+	.header .category .main-menu{
+		margin-left: 30px;
+		margin-right: 30px;
+	}
+	.navbar{
+		padding: 15px;
+	}
+
+	.top{
+		list-style: none;
+		float:right;
+		margin-top: 10px;
+
+
+	}
+	.top a{
+		 text-decoration: none;
+		 margin-left: 10px;
+		 margin-right: 10px;
+		 font-size:13px;
+		 color:black;
+
+	}
+	.category{
+		list-style: none;
+		
+		
+	
+		
+
+	}
+	.category a{
+		color:  black;
+		text-decoration: none;
+	}
+	.category a:hover{
+		 font-weight: 700;
+		 color: #EA560D;
+
+	}
+	.carousel-item{
+		
+		height:400px;
+		background-size: cover ;
+		background-position: center;
+		text-align: center;
+		
+
+		
+	}
+	
+
+	.carousel-item.item1{
+		background-image: url(https://i.postimg.cc/3wGFKTJF/image.png);
+		background-position: center center;
+
+	}
+	.helper {
+      display: inline-block;
+      height: 100%;
+      vertical-align: middle;
+    }
+	.text{
+		display: inline-block;
+      vertical-align: middle;
+
+
+		
+	}
+	.text h1{
+		color:white;
+		font-size: 30px;
+	}
+
+	.text h2{
+		color:white;
+
+	}
+	
+	.text h3{
+		color:white;
+		margin-bottom:40px;
+		font-size:20px;
+	}
+	
+	.text a{
+		color:white;
+		text-decoration: none;
+		border: 2px solid white;
+		border-radius: 10px;
+		padding-top:10px;
+		padding-bottom:10px;
+		padding-right: 10px;
+		padding-left: 10px;
+
+	
+	}
+	.text a:hover{
+		background-color: #EB5500;
+		text-decoration: underline;
+
+
+	
+	}
+	.carousel-item.item2{
+		background-image: url(https://i.postimg.cc/tCRkFw29/Untitled-4.png);
+		background-position: center center;
+
+
+	}
+	.btn {
+		color:orange;
+
+	}
+	.text2 a{
+		color:white;
+		text-decoration: none;
+		border: 2px solid white;
+		padding:10px;
+		border-radius: 10px;
+		font-size:20px;
+
+	}
+	
+	.second{
+		position: absolute;
+		right: 360px;
+		bottom: 70px;
+	}
+	.text2 a:hover{
+		background-color: #EB5500;
+		text-decoration: underline;
+	}
+
+
+	.carousel-item.item3{
+		
+		background-image: url(https://i.postimg.cc/PxqdwB4x/Artboard3.png);
+		
+	}
+	.course{
+		display: block;
+		box-shadow:0 2px 4px 0 rgba(0, 0, 0, 0.15);
+		border-radius: 0px;
+		margin-bottom:20px;
+	}
+	.course.course-image{
+		display:block;
+
+	}
+	.info{
+		float: left;
+		margin-left: 16px;
+		margin-right:  16px;
+		
+		margin-top: 12px;
+
+	}
+	.info2{
+		float: left;
+		margin-left: 16px;
+		margin-right:  16px;
+		
+		margin-top: 12px;
+
+
+	}
+		.info3{
+		float: left;
+		margin-left: 16px;
+		margin-right:  16px;
+		
+		margin-top: 12px;
+
+	}
+	.grid{
+		
+		width: 1184px;
+		margin: 0em auto;
+
+		
+		
+	}
+
+	.grid2{
+		
+		width: 1184px;
+		margin: 0em auto;
+
+		
+		
+	}
+	.grid3{
+		
+		width: 1184px;
+		margin: 0em auto;
+
+		
+		
+	}
+	.clearfix{
+		clear: both;
+		
+	}
+	
+  h4{
+		text-align: center;
+		font-size: 24px;
+		margin-top: 88px;
+		color: #2D2D2D;
+	}
+	h5{
+		margin-top: 10px;
+		font-size: 16px;
+		text-decoration: none;
+		color: #2D2D2D;
+
+
+	}
+	.h5{
+		text-decoration: none;
+		color: #2D2D2D;
+
+	}
+	.price{
+		font-size: 16px;
+	}
+	.image{
+		box-shadow:0 2px 4px 0 rgba(0, 0.2, 0, 0.3);
+		
+	}
+	.image2{
+		box-shadow:0 1px 2px 0 rgba(0, 0.2, 0, 0.3);
+	
+	}
+	
+	.image a:hover img{
+		transform:scale(1.1); 
+		transition: all 0.5s ease-in-out; 
+	}
+	.image{
+		width: 264px;
+		overflow:hidden;
+		border-radius: 12px;
+	}
+
+	.image2 a:hover img{
+		transform:scale(1.1); 
+		transition: all 0.3s ease-in-out; 
+	}
+	.image2{
+		width: 264px;
+		overflow:hidden;
+		border-radius: 12px;
+	}
+
+	.image3{
+		
+		border-radius: 12px;
+		
+	}
+	/*.four{
+		margin-top: 20px;
+	}
+*/	.five{
+		margin-top: 20px;
+	}
+	.six{
+		margin-top: 20px;
+	}
+	.seven{
+		margin-top: 20px;
+	}
+	.eight{
+		margin-top: 20px;
+	}
+	.one a:hover img{
+		content: url(https://i.postimg.cc/6555JT4X/1111.png);
+
+	}
+	.two a:hover img{
+		content: url(https://i.postimg.cc/KzDFCyZj/22222.png);
+	}
+	.three a:hover img{
+		content: url(https://i.postimg.cc/MGsgBKKy/444444.png);
+	}
+	.four a:hover img{
+		content: url(https://i.postimg.cc/DZ8HPk8R/666666.png);
+	}
+	.five a:hover img{
+		content: url(https://i.postimg.cc/G3T6BR0y/3333333.png);
+	}
+	.six a:hover img{
+		content: url(https://i.postimg.cc/yYqtcGBr/55555.png);
+	}
+	.seven a:hover img{
+		content: url(https://i.postimg.cc/nrXPYWGR/image.png);
+	}
+	.eight a:hover img{
+		content: url(https://i.postimg.cc/q7dHBpxk/image.png);
+	}
+
+	.key{
+		width: 1184px;
+		margin:0em auto;	
+		
+	}
+	.color{
+		color:#EA560D; 
+		font-weight: 700;
+	}
+	.before{
+		font-size: 12px;
+		text-decoration: line-through;
+	}
+
+
+ 
+ .word {
+  
+  			 color: #2D2D2D;
+  			 text-decoration: none;
+  			 font-size: 20px;
+  			 border: 2px solid #EB5C14;
+  			 background-color: white;
+  			 box-sizing: border-box;
+  			 padding: 8px 40px;
+  			 border-radius: 15px;
+  			 margin-left: 16px;
+  			 margin-right: 16px;
+  			 margin-top: 16px;
+  			 font-size: 16px;
+  			 float: left;
+
+
+
+			 }
+	.footer{
+ 	width: 100%;
+ 	height:180px;
+ 	background-color: #FAFAFA;
+ 	margin-top: 108px;
+ }		 
+
+	p{
+		
+		color: #b1adab;
+		text-align: center;
+	}
+	
+	section{
+		font-weight: 100px;
+		font-size: 12px;
+		text-align: center;
+		color: #5B5752;
+
+	
+
+	}
+	.ttop{
+		position: absolute;
+		right: 176px;
+		top: 0px;
+
+	}
+
+
+
+
+</style>
+<body>
+
+
+	<a class = "logo" href = "index.html"><img src = "https://crcf.cookatmarket.com/icons/cookatmarket_ogimg_w_400.png" height="120"></a>
+
+		<div class ="ttop">
+		<li class="top">
+          <a class="right" href="#">회원가입</a>
+        </li>
+
+ 		<li class="top">
+          <a class="right" href="login.html">로그인</a>
+        </li>
+
+    	<li class="top">
+          <a class="right" href="#">고객센터</a>
+        </li>
+      </div>
+
+	<nav class="navbar" style="background-color:#FAFAFA;">
+ 	  <div class="header">
+  		<li class="category">
+          <a class="main-menu" aria-current="page" href="#">소개 </a>
+        </li>
+        <li class="category">
+          <a class="main-menu" href="#">특가할인</a>
+        </li>
+         <li class="category">
+          <a class="main-menu" href="#">메뉴 </a>
+       <!--     <button class="dropbtn">Dropdown</button>
+  <div class="dropdown-content">
+  <a href="#">Link 1</a>
+  <a href="#">Link 2</a>
+  <a href="#">Link 3</a>
+  </div> -->
+        <!--   <div class="container-fluid">
+    
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDarkDropdown" aria-controls="navbarNavDarkDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavDarkDropdown">
+      <ul class="navbar-nav">
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+           메뉴
+          </a>
+          <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
+            <li><a class="dropdown-item" href="#">전체</a></li>
+            <li><a class="dropdown-item" href="#">1인분</a></li>
+            <li><a class="dropdown-item" href="#">밥, 면, 반찬</a></li>
+            <li><a class="dropdown-item" href="#">육류</a></li>
+            <li><a class="dropdown-item" href="#">수산</a></li>
+            <li><a class="dropdown-item" href="#">식단관리</a></li>
+            <li><a class="dropdown-item" href="#">홈, 리빙</a></li>
+            
+       
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div> -->
+        </li>
+        <li class="category">
+          <a class="main-menu" href="theme.html">테마관</a>
+        </li>
+        <li class="category">
+          <a class="main-menu" href="review.html" tabindex="-1" aria-disabled="true">리뷰 </a>
+        </li>
+
+        <li class="category">
+          <a class="main-menu" href="#" tabindex="-1" aria-disabled="true">이벤트&소식  </a>
+        </li>
+
+
+   
+       </div>
+</nav>
+
+<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+  <ol class="carousel-indicators">
+    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+  </ol>
+  <div class="carousel-inner">
+    <a class="carousel-item item1 active" href="#">
+      	
+    </a>
+    <a class="carousel-item item2" href="#">
+    	
+    		
+    		
+    		
+    
+      
+    </a>
+    <div class="carousel-item item3">
+    	<div class = "helper"></div><div class="text">
+    		<h1>매일 선착순 500분께</h1>
+    		<h2><strong>새벽배송비 혜택</strong>을 드려요!</h2>
+    		<h3>4만원 이상 구매 고객 / 서울, 경기, 인천 일부 지역</h3>
+    	    <a href = "#">받으러 가기</a></div>
+
+      
+    </div>
+  </div>
+
+  <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    
+  </a>
+  <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+ 
+  </a>
+</div>
+
+   <h4><strong>한 주의 시작! 월요일 추천!<strong></h4>
+   	<div class="clearfix">
+  <div class="grid">
+	<div class= "info">
+		
+		<div class= "image">
+		<a href = "#"><img src = "https://i.postimg.cc/132qCwnh/image.png" height="264"></a></div>
+		<a class = "h5" href = "#"><h5>쿠캣마켓 김치닭쫄면 910g<br>(2~3인분)</h5></a>
+		<span class = "color"> 10%</span><span class = "before"> 15,000원</span><span class = "price"> 13,500원</span>
+		
+	</div>
+
+	<div class= "info">
+		
+		<div class= "image">
+		<a href = "#"><img src = "https://i.postimg.cc/7P3vWh0c/image.png" height="264"></a></div>
+		<a class = "h5" href = "#"><h5>푸드렐라 크림수프 2종<br>(양송이/트러플감자)</h5></a>
+		<span class = "price">3,200원</span>
+		
+	</div>
+
+	<div class= "info">
+		
+		<div class= "image">
+		<a href = "#"><img src = "https://i.postimg.cc/25FZKQYd/image.png" height="264" ></a></div>
+		<a class = "h5" href = "#"><h5>푸드렐라 석쇠닭갈비 300g<br>(1인분)</h5></a>
+		<span class = "price"> 7,900원</span>
+		
+	</div>
+
+	<div class= "info">
+		
+		<div class= "image">
+		<a  href = "#"><img src = "https://i.postimg.cc/ZRbdtWYG/image.png" height="264"></a></div>
+		<a class = "h5" href = "#"><h5>렌지용 화덕<br>생선구이 2종(고등어/삼치)</h5></a>
+		<span class = "color"> 10%</span><span class = "before"> 3,200원</span><span class = "price"> 2,880원</span>
+		
+	</div>
+</div>
+</div>
+	
+	<h4><strong>쿠캣마켓에서만 판다쿠!</strong></h4>
+	<div class = "clearfix">
+	
+
+	<div class="grid2">
+	<div class= "info2">
+		
+		<div class= "image2">
+		<a href = "#"><img src = "https://i.postimg.cc/k416SSdp/image.png" height="264"></a></div>
+		<a class = "h5" href = "#"><h5>쿠캣마켓 찹쌀떡 3종 (9개입)</h5></a>
+		<span class = "color"> 20%</span><span class = "before"> 12,000원</span><span class = "price"> 9,600원</span>
+		
+	</div>  
+
+	<div class= "info2">
+		
+		<div class= "image2">
+		<a href = "#"><img src = "https://i.postimg.cc/N0b5hXLj/image.png" height="264" ></a></div>
+		<a class = "h5" href = "#"><h5>쿠캣마켓 스프레드 4종 잼</h5></a>
+		<span class = "color"> 3+1</span><span class = "price"> 4,900원</span>
+		
+	</div>
+
+	<div class= "info2">
+		
+		<div class= "image2">
+		<a href = "#"><img src = "https://i.postimg.cc/hv3VcT2J/image.png" height="264" ></a></div>
+		<a class = "h5" href = "#"><h5>쿠캣마켓 닭가슴살 소세지 3종</h5></a>
+		<span class = "color"> 1+1</span><span class = "price"> 1,900원</span>
+		
+	</div>
+
+	<div class= "info2">
+		
+		<div class= "image2">
+		<a href = "#"><img src = "https://i.postimg.cc/XJVdd3Bp/image.png" height="264" ></a></div>
+		<a class = "h5" href = "#"><h5>쿠캣마켓 식단관리 곤약밥 2종</h5></a>
+		<span class = "price"> 2,400원</span>
+		
+	</div>
+
+	
+	</div>
+</div>
+
+	<h4><strong>테마별 추천</strong></h4>
+	<div class = "clearfix">
+	
+
+	<div class="grid3">
+	<div class= "info3">
+		
+		<div class= "image3 one">
+		<a href = "theme.html"><img src = "https://i.postimg.cc/PfVzknpC/1.png" width="264" height="284"></a></div>
+		
+	</div>
+
+	<div class= "info3">
+		
+		<div class= "image3 two">
+		<a href = "theme.html"><img src = "https://i.postimg.cc/28mww7Zw/2.png" width="264" height="284"></a></div>
+		
+		
+	</div>
+
+	<div class= "info3">
+		
+		<div class= "image3 three">
+		<a href = "theme.html"><img src = "https://i.postimg.cc/zGGkmDpH/4.png" width="264" height="284"></a></div>
+		
+		
+	</div>
+
+	<div class= "info3">
+		
+		<div class= "image3 four">
+		<a href = "theme.html"><img src = "https://i.postimg.cc/0yX09gHW/6.png" width="264" height="284"></a></div>
+		
+		
+	</div>
+
+	<div class= "info3">
+		
+		<div class= "image3 five">
+		<a href = "theme.html"><img src = "https://i.postimg.cc/SKwLz64c/3.png" width="264" height="284"></a></div>
+		
+		
+	</div>
+
+	<div class= "info3">
+		
+		<div class= "image3 six">
+		<a href = "theme.html"><img src = "https://i.postimg.cc/PJM1c0wM/5.png" width="264" height="284"></a></div>
+		
+		
+	</div>
+
+	<div class= "info3">
+		
+		<div class= "image3 seven">
+		<a href = "theme.html"><img src = "https://i.postimg.cc/FsZLVK16/666666.png" width="264" height="284"></a></div>
+		
+		
+	</div>
+
+	<div class= "info3">
+		
+		<div class= "image3 eight">
+		<a href = "theme.html"><img src = "https://i.postimg.cc/Wz7h89pZ/image.png" width="264" height="284"></a></div>
+		
+		
+	</div>
+
+
+</div>
+</div>
+
+<h4><strong>인기 키워드 검색어</strong></h4>
+<div class="clearfix">
+	<div class="good">
+<div class="key">
+<a href="#" class="word">#밀키트</a>
+<a href="#" class="word">#맛있는 한끼</a>
+<a href="#" class="word">#술안주</a>
+<a href="#" class="word">#디저트</a>
+<a href="#" class="word">#고단백</a>
+<a href="#" class="word">#여름 더위를 날려줄</a>
+<a href="#" class="word">#건강관리를 위한 영양제</a>
+<a href="#" class="word">#간편조리음식</a>
+<a href="#" class="word">#비건푸드</a>
+
+<a href="#" class="word">#다이어트</a>
+<a href="#" class="word">#빵</a>
+<a href="#" class="word">#조리도구</a>
+
+<a href="#" class="word">#든든한 한끼</a>
+
+</div>
+</div>
+</div>
+
+
+
+<div class= "footer">
+	<div class="wow">
+	
+		<section>
+		<br><br>이용약관 개인정보처리방침 전자금융거래이용약관
+		<br><br>대표자:이문주&nbsp;&nbsp;
+		주소:서울특별시 강남구 영동대로 112길 36 (삼성동)&nbsp;&nbsp;
+		통신판매업 신고번호:2018-서울강남-01681&nbsp;&nbsp;
+		상품 제휴문의:product@cookat.co
+		<br>개인정보보호 책임자:주지석 (jiseok.joo@cookat.co)&nbsp;&nbsp;
+		
+		<br><br>고객센터 1668-3525&nbsp;&nbsp;
+		평일-10:00~18:00 (점심시간 13:00~14:00)&nbsp;&nbsp;
+		주말-10:00 - 13:00
+		
+	
+
+		
+
+		<p><br>Copyright © 쿠캣마켓. All rights reserved.</p>
+	</section>
+	
+	
+	
+	</div>
+</div>
+
+
+
+
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous"></script>
+</body>
+</html>

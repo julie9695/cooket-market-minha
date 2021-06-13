@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>쿠캣마켓</title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+
+
+</head>
+<style>
+	
+	
+
+</head>
+<style>
+  *{
+  	margin: 0;
+  }
+	body{
+		margin:0;
+		font-family: 'Nanum Gothic', sans-serif;
+		box-sizing: border-box;
+	}
+
+	.logo{
+		
+		
+		margin-left: 650px;
+		
+	}
+	.header{
+
+		margin-right: auto;
+		margin-left: auto;
+	}
+	.header .category{
+		float: left;
+		
+	}
+	.header .category .main-menu{
+		margin-left: 30px;
+		margin-right: 30px;
+	}
+	.navbar{
+		padding: 15px;
+	}
+
+	.top{
+		list-style: none;
+		float:right;
+		margin-top: 10px;
+
+
+	}
+	.top a{
+		 text-decoration: none;
+		 margin-left: 10px;
+		 margin-right: 10px;
+		 font-size:13px;
+		 color:black;
+
+	}
+	.category{
+		list-style: none;
+		
+		
+	
+		
+
+	}
+	.category a{
+		color:  black;
+		text-decoration: none;
+	}
+	.category a:hover{
+		 font-weight: 700;
+		 color: #EA560D;
+
+	}
+	
+	.footer{
+ 	width: 100%;
+ 	height:180px;
+ 	background-color: #FAFAFA;
+ 	margin-top: 108px;
+ }		 
+ 	p{
+		
+		color: #b1adab;
+		text-align: center;
+	}
+	
+	section{
+		font-weight: 100px;
+		font-size: 12px;
+		text-align: center;
+		color: #5B5752;
+
+
+	
+
+	}
+	.ttop{
+		position: absolute;
+		right: 176px;
+		top: 0px;
+
+	}
+	.review a{
+		font-weight: 700;
+		 color: #EA560D;
+	}
+	h4{
+		text-align: center;
+		font-size: 24px;
+		margin-top: 88px;
+		color: #2D2D2D;
+	}
+	.info{
+		width: 264px;
+ 			 height: 500px;
+  			 box-shadow:0 2px 2px 0 rgba(0, 0.2, 0, 0.3);
+  			 /*border-radius: 10px;*/
+  			 overflow: hidden;
+  			 margin-left: 16px;
+  			 margin-right: 16px;
+  			 margin-top: 32px;
+  			 padding-bottom: 20px;
+  			 background-color: white;
+  			 float: left;
+  			 border-radius: 12px;
+
+	}
+	h5{
+		text-align: left;
+		margin: 20px;
+		font-size: 16px;
+		font-weight: 700;
+	}
+	.summary{
+		text-align: justify;
+		margin: 20px;
+		font-size: 12px;
+	}
+	.float{
+		float: left;
+		margin-left: 10px;
+		margin-right: 10px;
+		margin-bottom: 10px;
+		font-size: 12px;
+	}
+	.insta{
+		margin-left: 8px;
+		margin-bottom: 20px;
+	}
+	.clearfix{
+		clear: right;
+	}
+	.grid{
+		
+		width: 1184px;
+		margin: 0em auto;
+	}
+	.go{
+		width: 1184px;
+		margin: 0em auto;
+		margin-top: 16px;
+		margin-bottom: 16px;
+		
+		
+	}
+	.line{
+		width:  1184px;
+		margin:  0em auto;
+		border-bottom: 2px solid #EB5C14;
+	}
+	.talk{
+		margin-left: 15px;
+		font-size: 12px;
+		margin-top: 32px;
+		margin-bottom: 16px;
+		
+	}
+	.cj{
+		border-bottom: 1px solid gray;
+		width: 1184px;
+		margin: 0em auto;
+	}
+	.one a:hover img{
+		content: url(https://i.postimg.cc/RZh0MHjm/image.png);
+	}
+	.two a:hover img{
+		content: url(https://i.postimg.cc/cJD2dKyp/image.png);
+	}
+	.three a:hover img{
+		content: url(https://i.postimg.cc/CK6PWWbY/22.png);
+	}
+	.four a:hover img{
+		content: url(https://i.postimg.cc/05SWBXjR/2.png);
+	}
+	.yes{
+		margin-left: 40px;
+		margin-right: 180px;
+	}
+	.no{
+		margin-left: 30px;
+	}
+	.oh{
+		margin-bottom: 16px;
+		margin-top: 16px;
+	}
+	
+	.hi{
+		margin-left: 40px;
+		margin-right: 100px;
+	}
+	.bye{
+		margin-left: 80px;
+	}
+	.ho{
+		margin-left: 80px;
+		margin-right: 100px;
+	}
+	.he{
+		margin-left: 50px;
+		margin-right: 100px;
+	
+	}
+	.hr{
+		margin-left: 100px;
+		margin-right: 100px;
+	}
+	.ht{
+		margin-left: 57px;
+		margin-right: 100px;
+	}
+	.btn{
+
+		border: 2px solid #EB5C14;
+		background-color: #EB5C14;
+		margin: 10px;
+	}
+	
+	.btn a{
+		text-decoration: none;
+
+		color: white;
+	}
+	.off{
+		margin-bottom: 32px;
+		
+	}
+	.stop{
+		position: absolute;
+		right: 160px;
+
+	}
+
+</style>
+<body>
+	<a class = "logo" href = "index.html"><img src = "https://crcf.cookatmarket.com/icons/cookatmarket_ogimg_w_400.png" height="120"></a>
+
+		<div class= "ttop">
+		<li class="top">
+          <a class="right" href="#">회원가입</a>
+        </li>
+
+ 		<li class="top">
+          <a class="right" href="login.html">로그인</a>
+        </li>
+
+    	<li class="top">
+          <a class="right" href="#">고객센터</a>
+        </li>
+    </div>
+
+	<nav class="navbar" style="background-color:#FAFAFA;;">
+ 	  <div class="header">
+  		<li class="category">
+          <a class="main-menu" aria-current="page" href="#">소개 </a>
+        </li>
+        <li class="category">
+          <a class="main-menu" href="#">특가할인</a>
+        </li>
+         <li class="category">
+          <a class="main-menu" href="#">메뉴 </a>
+       <!--     <button class="dropbtn">Dropdown</button>
+  <div class="dropdown-content">
+  <a href="#">Link 1</a>
+  <a href="#">Link 2</a>
+  <a href="#">Link 3</a>
+  </div> -->
+        <!--   <div class="container-fluid">
+    
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDarkDropdown" aria-controls="navbarNavDarkDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavDarkDropdown">
+      <ul class="navbar-nav">
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+           메뉴
+          </a>
+          <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
+            <li><a class="dropdown-item" href="#">전체</a></li>
+            <li><a class="dropdown-item" href="#">1인분</a></li>
+            <li><a class="dropdown-item" href="#">밥, 면, 반찬</a></li>
+            <li><a class="dropdown-item" href="#">육류</a></li>
+            <li><a class="dropdown-item" href="#">수산</a></li>
+            <li><a class="dropdown-item" href="#">식단관리</a></li>
+            <li><a class="dropdown-item" href="#">홈, 리빙</a></li>
+            
+       
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div> -->
+        </li>
+        <li class="category theme">
+          <a class="main-menu" href="theme.html">테마관</a>
+        </li>
+        <li class="category review">
+          <a class="main-menu" href="review.html" tabindex="-1" aria-disabled="true">리뷰 </a>
+        </li>
+
+        <li class="category">
+          <a class="main-menu" href="#" tabindex="-1" aria-disabled="true">이벤트&소식  </a>
+        </li>
+
+
+   
+       </div>
+</nav>
+	
+	<h4><strong>인스타 리뷰</strong></h4>
+
+
+		<div class="clearfix">
+  <div class="grid">
+	<div class= "info">
+		
+		<div class= "image one">
+		<a href = "#"><img src = "https://i.postimg.cc/DzqM9Wjd/image.png" height="264"></a></div>
+		<h5>다이어트 할 때 <br>식단조절용으로 최고에요~!</h5>
+		<div class = "summary">한식부터 양식까지 영양사가 짠 듯 완벽한 영양 조합으로 구성된 도시락이에요! 칼로리도 적을뿐더러 다양한 메뉴구성으로 매끼 어떤 도시락을 먹을지 행복한 고민시작이에영!</div>
+		
+		<div class= "clearfix">
+		<div class= "insta"><div class = "float"><img src = "https://i.postimg.cc/LsKHk1gz/image.png" height="40"></div>
+		<div class = "float">탱구님<br>@mukstagram_oy</div></div></div>
+		
+	</div>
+
+	<div class= "info">
+		
+		<div class= "image two">
+		<a href = "#"><img src = "https://i.postimg.cc/tJWfj2zT/image.png" height="264"></a></div>
+		<h5>냉동실에 얼렸다가 <br>살짝 해동해먹으면 완벽!</h5>
+		<div class = "summary">티라미수의 달콤하고 진한 향이 느껴지고 떡 자체도 쪼올깃해서 맛나요 맛나 ㅎㅎ 아메리카노랑 당충전 하고플 때 먹을만큼한 딱 꺼내서 먹기도 좋구요~ 그리고 많이 먹어도 질리지가 않아서 아주 좋아용</div>
+		
+		<div class= "insta"><div class = "float"><img src = "https://i.postimg.cc/JnyvT1Dj/image.png" height="40"></div>
+		<div class = "float">미니언즈님<br>@xxlssjxx</div></div>
+		
+	</div>
+
+	<div class= "info">
+		
+		<div class= "image three">
+		<a href = "#"><img src = "https://i.postimg.cc/L58YdbSk/image.png" height="264"></a></div>
+		<h5>조리 방식이 라면보다 <br>간단한 감바스입니다앙!</h5>
+		<div class = "summary">10분안에 조리하면 끝나는, 라면보다 간단한 감바스입니다! 반미바게트는 저번에 매콤크림닭갈비랑도 먹었는데 감바스랑도 너무나 어울리네요^^ 아 그리구 술안주로 적절합니다~</div>
+		
+		<div class= "insta"><div class = "float"><img src = "https://i.postimg.cc/9QR9FK7J/image.png" height="40"></div>
+		<div class = "float">후루룩님<br>@huruluk_mukstagram</div></div>
+		
+	</div>
+
+	<div class= "info">
+		
+		<div class= "image four">
+		<a href = "#"><img src = "https://i.postimg.cc/rwMp7H9D/image.png" height="264"></a></div>
+		<h5>감히 치킨보다 더 맛있는.. <br>닭바베큐였어용~</h5>
+		<div class = "summary">매콤달콤 감칠맛과 불 맛이 풍부하게 났어요! 맛있는 양념이 넉넉 ㅎㅎ 매콤달달하게 치밥으로 짜잔! 스크램블에그에 마요네즈로 고소함 더하니 더 맛있었어용 안주로도 반찬으로도 GOOD~!</div>
+		
+		<div class= "insta"><div class = "float"><img src = "https://i.postimg.cc/5tt22FT1/image.png" height="40"></div>
+		<div class = "float">갱츄님<br>@leekh420</div></div>
+		
+	</div>
+</div>
+</div>
+
+<h4><strong>상품 후기</strong></h4>
+
+<div class = "off">
+<div class = "go">
+	<div class= "line">
+<div class = "talk">
+	PRODUCT REVIEW<br>
+	<li>상품에 대한 문의를 남기는 공간입니다. 해당 게시판의 성격과 다른 글은 사전동의 없이 담당 게시판으로 이동될 수 있습니다.</li>
+	<li>배송관련, 주문(취소/교환/환불)관련 문의 및 요청사항은 마이컬리 내 1:1 문의에 남겨주세요.</li>
+</div>
+</div>
+</div>
+
+
+<div class= "cj">
+	<div class = "oh">
+<span class = "yes">번호</span>
+<span class = "yes">제목</span>
+<span class = "yes">작성자</span>
+<span class = "yes ll">작성일</span>
+<span class = "no">조회</span>
+</div></div>
+
+<div class= "cj">
+	<div class = "oh">
+<span class = "hi">공지</span>
+<span class = "hi">금주의 BEST 후기 안내</span>
+<span class = "hi">Cooket Market</span>
+<span class = "ho">2021.01.02</span>
+<span class = "bye">39480</span>
+</div></div>
+
+<div class= "cj">
+	<div class = "oh">
+<span class = "hi">공지</span>
+<span class = "hi">상품후기 적립금 안내</span>
+<span class = "he">Cooket Market</span>
+<span class = "ho">2021.01.02</span>
+<span class = "bye">43545</span>
+</div></div>
+
+<div class= "cj">
+	<div class = "oh" href="#">
+<span class = "hi">140</span>
+<span class = "hi">매운닭발 너무 맛나여</span>
+<span class = "ht">다리긴 하마</span>
+<span class = "hr">2021.05.27</span>
+<span class = "bye">3355</span>
+</div></div>
+
+<div class= "cj">
+	<div class = "oh">
+<span class = "hi">141</span>
+<span class = "hi">찹쌀떡이 쫄깃쫄깃해염</span>
+<span class = "he">덩기덩쿵덕</span>
+<span class = "hr">2021.05.30</span>
+<span class = "bye">3436</span>
+</div></div>
+
+<div class= "cj">
+	<div class = "oh">
+<span class = "hi">142</span>
+<span class = "hi">배송이 엄청빨라욬ㅋㅋ</span>
+<span class = "he">룰루랄라랄</span>
+<span class = "hr">2021.05.31</span>
+<span class = "bye">2344</span>
+</div></div>
+
+<div class= "line">
+	<div class = "oh">
+<span class = "hi">143</span>
+<span class = "hi">재구매의사 완전있음ㅎ</span>
+<span class = "he">히헤힣헿ㅎ</span>
+<span class = "hr">2021.06.11</span>
+<span class = "bye">2008</span>
+</div></div></div>
+
+
+	<div class= "stop">
+ <div class= "btn"><a href = "#">후기쓰기</a></div>
+ <div class= "btn"><a href = "#">문의하기</a></div></div>
+
+
+
+<div class= "footer">
+	<div class="wow">
+	
+		<section>
+		<br><br>이용약관 개인정보처리방침 전자금융거래이용약관
+		<br><br>대표자:이문주&nbsp;&nbsp;
+		주소:서울특별시 강남구 영동대로 112길 36 (삼성동)&nbsp;&nbsp;
+		통신판매업 신고번호:2018-서울강남-01681&nbsp;&nbsp;
+		상품 제휴문의:product@cookat.co
+		<br>개인정보보호 책임자:주지석 (jiseok.joo@cookat.co)&nbsp;&nbsp;
+		
+		<br><br>고객센터 1668-3525&nbsp;&nbsp;
+		평일-10:00~18:00 (점심시간 13:00~14:00)&nbsp;&nbsp;
+		주말-10:00 - 13:00
+		
+	
+
+		
+
+		<p><br>Copyright © 쿠캣마켓. All rights reserved.</p>
+	</section>
+	
+	
+	
+	</div>
+</div>
+
+
+</body>

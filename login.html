@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>버튼 디자인</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="css/styles.css">
+  <link href="https://fonts.googleapis.com/earlyaccess/notosanskr.css" rel="stylesheet">
+</head>
+<style>
+* {
+  box-sizing: border-box;
+  font-family: 'Noto Sans KR', sans-serif;
+}
+
+body {
+  margin: 0;
+  background-color: white;
+}
+
+.login-form {
+    background-color: #EEEFF1;
+    margin-top:  100px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 5px;
+    width: 500px;
+    height:550px;
+    padding: 20px; 20px; 20px; 20px;
+    margin-bottom: 10px;    
+}
+
+.text-field {
+  font-size: 14px;
+  border: none;
+  width: 460px;
+  margin-bottom: 10px;
+  padding: 20px; 10px; 10px; 10px;
+  border-radius: 5px;  
+}
+
+.submit-btn {    
+  font-size: 14px;
+  background-color: #EA560D;
+  text-align: center;
+  width: 460px;
+  height:50px;
+  padding: 10px; 10px; 10px; 10px; 
+  border-radius: 5px;
+  margin-top: 20px;
+}
+.submit-btn:hover { 
+  box-shadow: 0px 2px 4px 0 rgba(0, 0, 0, 0.50); 
+}
+h1{
+  font-size:16px;
+}
+.links {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.links a {
+  font-size: 12px;
+  color: #9B9B9B;
+  text-align: center;
+}
+.float{
+  text-decoration: none;
+  color: gray;
+  text-align: center;
+  margin: 10px;
+
+}
+
+.wow{
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: 75px;
+}
+
+</style>
+<body>
+  <div class="login-form">
+    <form> <h1>아이디</h1>
+      <input type="text" name="email" class="text-field" placeholder="아이디"><br> <h1>비밀번호</h1>
+      <input type="password" name="password" class="text-field" placeholder="비밀번호"><br>
+      <input type="submit" value="로그인" class="submit-btn">
+    </form>
+    <div class = "wow">
+     <a class = "float" href = "#">아이디 찾기</a>
+     <a class = "float" href = "#">비밀번호 찾기</a>
+     <a class = "float" href = "#">회원가입</a></div>
+    <div class="links">
+      <a href="#">비밀번호를 잊어버리셨나요?</a>
+    </div>
+    
+  </div>
+</body>
+</html>
